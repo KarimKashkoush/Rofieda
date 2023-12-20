@@ -22,7 +22,9 @@
 }
 
 body {
+    scroll-behavior: smooth;
     font-family: "Cairo", sans-serif;
+    background-color: #f2f7fc;
 }
 
 @media (min-width: 786px) {
