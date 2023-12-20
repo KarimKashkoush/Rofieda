@@ -12,6 +12,9 @@
 
     --transition-3: ease 0.3s;
     --transition-5: ease 0.5s;
+
+    --p-100: 100px;
+    --p-50: 50px;
 }
 
 * {
@@ -261,51 +264,65 @@ img {
     }
 }
 
+.landing .container .content p {
+    color: var(--sub-text-color);
+}
+
 .landing .container .content p:not(:last-child) {
     margin-bottom: 30px;
     line-height: 1.6;
 }
+
 .landing .container .content p span {
     background-image: var(--bg-color);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 .landing .container .content p:last-child {
     max-width: 450px;
     line-height: 1.6;
 }
+
 .landing .container .images {
     position: relative;
 }
+
 .landing .container .images img:first-child,
 .landing .container .images img:last-child {
     position: absolute;
     width: 150px;
     border-radius: 15px;
 }
+
 .landing .container .images img:first-child {
     bottom: -50px;
     right: -50px;
 }
+
 .landing .container .images img:last-child {
     top: 50px;
     left: -50px;
 }
+
 @media (max-width: 550px) {
     .landing .container .images {
         width: 200px;
     }
+
     .landing .container .images img:nth-child(2) {
         width: 200px;
         display: block;
         margin: auto;
     }
+
     .landing .container .images img:nth-child(1),
     .landing .container .images img:nth-child(3) {
         width: 100px;
     }
 }
+
 @media (max-width: 993px) {
     .landing .container {
         text-align: center;
@@ -313,14 +330,51 @@ img {
         justify-content: center;
         gap: 50px;
     }
+
     .landing .container .content h2 {
         font-size: 35px;
     }
+
     .landing .container .content p:not(:last-child) {
         margin-bottom: 15px;
     }
+
     .landing .container p {
         margin: auto;
     }
 }
 /* End Landing */
+/* Start iDo */
+.iDo {
+    padding-block: var(--p-100);
+}
+.iDo .container > h2 {
+    font-size: 35px;
+    font-weight: var(--fw-ExtraBold-800);
+    color: var(--text-color);
+    margin-bottom: 80px;
+    position: relative;
+} 
+.iDo .container > h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 7px;
+    background-image: var(--bg-color);
+}
+.iDo .container .content:not(:last-child) {
+    margin-bottom: 50px;
+}
+.iDo .container .content h3 {
+    color: var(--text-color);
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.iDo .container .content p {
+    line-height: 1.6;
+    color: var(--sub-text-color);
+    max-width: 850px;
+}
+/* End iDo */
