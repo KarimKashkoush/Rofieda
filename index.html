@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rofieda</title>
     <!-- Font Awesome Css -->
-    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/all.css" />
     <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
     <!-- Normalize css file -->
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/normalize.css" />
     <!-- css file -->
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
+
 <body>
+    <!-- Start BackGround Fixed -->
+    <section class="background-fixed">
+        <img src="assets/images/Rofieda PNG.png" alt="" />
+    </section>
+    <!-- End BackGround Fixed -->
     <!-- Start NavBar -->
     <section class="top-nav">
         <section class="container">
@@ -73,12 +84,16 @@
             <section class="content">
                 <h2>hello i'm <span>rofieda Kashkoush.</span></h2>
                 <p>I am an <span>Architect Engineer.</span></p>
-                <p>Use the principles of science and mathematics in building and construction to ensure and evaluate the quality of buildings, in addition to making some modifications and improvements to them.</p>
+                <p>
+                    Use the principles of science and mathematics in building and
+                    construction to ensure and evaluate the quality of buildings, in
+                    addition to making some modifications and improvements to them.
+                </p>
             </section>
             <section class="images">
-                <img src="assets/images/landing-2.jpg" alt="">
-                <img src="assets/images/landing-1.jpg" alt="">
-                <img src="assets/images/landing-3.jpg" alt="">
+                <img src="assets/images/landing-2.jpg" alt="" />
+                <img src="assets/images/landing-1.jpg" alt="" />
+                <img src="assets/images/landing-3.jpg" alt="" />
             </section>
         </section>
     </section>
@@ -86,35 +101,79 @@
     <!-- Start Works -->
     <section class="works">
         <section class="container">
-
+            <h2 class="section-header">my works.</h2>
+            <section class="bathroom">
+                <h3 class="work-name">bathroom</h3>
+                <swiper-container class="mySwiper" pagination="true" effect="coverflow" grab-cursor="true"
+                centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="50" coverflow-effect-stretch="0"
+                coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">
+                <swiper-slide>
+                    <img src=" https://swiperjs.com/demos/images/nature-1.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                </swiper-slide>
+                <swiper-slide>
+                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                </swiper-slide>
+            </swiper-container>
+            </section>
         </section>
     </section>
     <!-- End Works -->
     <!-- Start feadBack -->
     <section class="fead-back">
-        <section class="container">
-
-        </section>
+        <section class="container"></section>
     </section>
     <!-- End feadBack -->
     <!-- Start iDo -->
     <section class="iDo">
         <section class="container">
-            <h2>What I do.</h2>
+            <h2 class="section-header">What I do.</h2>
             <section class="content">
                 <h3>desgin</h3>
-                <p>I design beautiful and powerful websites for modern businesses. Any business today ne eds a website that wins customers’ trust and helps you do your business well. I make sure your website is up to that standard.</p>
+                <p>
+                    I design beautiful and powerful websites for modern businesses. Any
+                    business today ne eds a website that wins customers’ trust and helps
+                    you do your business well. I make sure your website is up to that
+                    standard.
+                </p>
             </section>
             <section class="content">
                 <h3>desgin</h3>
-                <p>I design beautiful and powerful websites for modern businesses. Any business today ne eds a website that wins customers’ trust and helps you do your business well. I make sure your website is up to that standard.</p>
+                <p>
+                    I design beautiful and powerful websites for modern businesses. Any
+                    business today ne eds a website that wins customers’ trust and helps
+                    you do your business well. I make sure your website is up to that
+                    standard.
+                </p>
             </section>
         </section>
     </section>
     <!-- End iDo -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <!-- Font Awesome Js -->
     <script src="assets/js/all.js"></script>
     <!-- Js file -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

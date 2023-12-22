@@ -5,6 +5,7 @@
     --sub-bg-color: linear-gradient(90deg, #0171ff, #5c47ff 100%, #42ccff);
     --text-color: #160042;
     --w-color: #fff;
+    --main-bg: #f2f7fc;
     --fw-Medium-500: 500;
     --fw-SemiBold-600: 600;
     --fw-Bold-700: 700;
@@ -27,7 +28,7 @@
 body {
     scroll-behavior: smooth;
     font-family: "Cairo", sans-serif;
-    background-color: #f2f7fc;
+    background-color: var(--main-bg);
 }
 
 @media (min-width: 786px) {
@@ -132,6 +133,38 @@ a {
     .container {
         width: 1150px;
     }
+}
+
+.background-fixed {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.background-fixed img {
+    width: 100%;
+    opacity: 0.2;
+}
+
+.section-header {
+    font-size: 45px;
+    font-weight: var(--fw-ExtraBold-800);
+    color: var(--text-color);
+    margin-bottom: 80px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.section-header::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 60px;
+    height: 7px;
+    background-image: var(--bg-color);
 }
 
 /* Start bottom-nav */
@@ -343,38 +376,59 @@ img {
         margin: auto;
     }
 }
+
 /* End Landing */
+
+/* Start Work */
+.works {
+    padding-block: var(--p-100);
+    background-color: var(--main-bg);
+    position: relative;
+}
+
+.works .container .work-name {
+    text-transform: capitalize;
+    text-align: center;
+}
+
+swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+}
+
+swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+/* End Work */
 /* Start iDo */
 .iDo {
     padding-block: var(--p-100);
 }
-.iDo .container > h2 {
-    font-size: 35px;
-    font-weight: var(--fw-ExtraBold-800);
-    color: var(--text-color);
-    margin-bottom: 80px;
-    position: relative;
-} 
-.iDo .container > h2::before {
-    content: "";
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 60px;
-    height: 7px;
-    background-image: var(--bg-color);
-}
+
 .iDo .container .content:not(:last-child) {
     margin-bottom: 50px;
 }
+
 .iDo .container .content h3 {
     color: var(--text-color);
     text-transform: capitalize;
     margin-bottom: 10px;
 }
+
 .iDo .container .content p {
     line-height: 1.6;
     color: var(--sub-text-color);
     max-width: 850px;
 }
+
 /* End iDo */
